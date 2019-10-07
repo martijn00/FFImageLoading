@@ -29,6 +29,7 @@
     <None Include="Resources\*.cs" />
     <Compile Remove="Resources\*.cs" />
     <None Include="readme.txt" pack="true" PackagePath="." />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
 
   <ItemGroup Condition=" $(TargetFramework.StartsWith('netstandard')) ">
@@ -99,7 +100,6 @@
   </ItemGroup>
 
   <ItemGroup Condition=" $(TargetFramework.StartsWith('tizen')) ">
-    <PackageReference Include="Tizen.NET" Version="4.0.0" PrivateAssets="All" />
     <None Remove="Platforms\Tizen\**\*.cs" />
     <None Remove="Platforms\Xamarin\**\*.cs" />
     <Compile Include="Platforms\Tizen\**\*.cs" />
