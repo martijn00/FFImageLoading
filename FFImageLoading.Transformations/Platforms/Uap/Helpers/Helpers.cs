@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FFImageLoading.Transformations
+namespace FFImageLoading.Uap.Transformations
 {
     public static class Helpers
     {

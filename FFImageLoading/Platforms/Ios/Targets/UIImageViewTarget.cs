@@ -2,6 +2,7 @@
 using FFImageLoading.Work;
 using UIKit;
 
+#if !__WATCHOS__
 namespace FFImageLoading.Targets
 {
     public class UIImageViewTarget : UIViewTarget<UIImageView>
@@ -106,3 +107,4 @@ namespace FFImageLoading.Targets
 
     }
 }
+#endif

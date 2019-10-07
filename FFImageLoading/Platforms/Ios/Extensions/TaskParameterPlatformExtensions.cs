@@ -6,7 +6,7 @@ using UIKit;
 using FFImageLoading.Targets;
 using FFImageLoading.Extensions;
 using System.Runtime.CompilerServices;
-
+#if !__WATCHOS__
 namespace FFImageLoading
 {
     /// <summary>
@@ -202,3 +202,4 @@ namespace FFImageLoading
         }
     }
 }
+#endif

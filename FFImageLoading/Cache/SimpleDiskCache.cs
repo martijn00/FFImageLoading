@@ -9,7 +9,7 @@ using FFImageLoading.IO;
 using FFImageLoading.Config;
 using FFImageLoading.Helpers;
 
-#if __ANDROID__ || __IOS__
+#if __ANDROID__ || __IOS__ || __MACOS__ || TIZEN || NET
 namespace FFImageLoading.Cache
 {
 

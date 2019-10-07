@@ -206,7 +206,7 @@ namespace FFImageLoading.Decoders
             ScaleAspectFill = (long)NSImageScaling.ProportionallyUpOrDown, //UIViewContentMode.ScaleAspectFill,
             ScaleAspectFit = (long)NSImageScaling.ProportionallyDown, //UIViewContentMode.ScaleAspectFit,
             ScaleToFill = (long)NSImageScaling.AxesIndependently //UIViewContentMode.ScaleToFill,
-#elif __IOS__ || __TVOS__ || __WATCHOS__
+#elif __IOS__ || __TVOS__
 			ScaleAspectFill = UIViewContentMode.ScaleAspectFill,
             ScaleAspectFit = UIViewContentMode.ScaleAspectFit,
             ScaleToFill = UIViewContentMode.ScaleToFill,

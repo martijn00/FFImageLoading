@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using FFImageLoading.Extensions;
 using UIKit;
-
+#if !__WATCHOS__
 namespace FFImageLoading.Targets
 {
     public class UIBarItemTarget: UIViewTarget<UIBarItem>
@@ -44,3 +44,4 @@ namespace FFImageLoading.Targets
     }
 }
 
+#endif

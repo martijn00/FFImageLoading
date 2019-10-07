@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using FFImageLoading.Extensions;
 using FFImageLoading.Work;
 using UIKit;
-
+#if !__WATCHOS__
 namespace FFImageLoading.Targets
 {
     public class UIButtonTarget: UIViewTarget<UIButton>
@@ -37,3 +37,4 @@ namespace FFImageLoading.Targets
     }
 }
 
+#endif
